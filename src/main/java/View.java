@@ -2,11 +2,15 @@ public class View {
 
     public void startMenu(){
         System.out.println("Welcome to Blackjack!");
-        System.out.println("How much would you like to bet?");
-        System.out.print("Place bet: ");
     }
-    public void money(double money){
-        System.out.println("You have " + money + " Kr to bet");
+    public void bet(int saldo){
+        System.out.println("You have "+ saldo + " in your pocket" + "\n" + "How much would you like to bet?");
+    }
+    public void setSaldo(int Saldo){
+        System.out.println("You have " + Saldo + " Kr to bet");
+    }
+    public void betPlaced(int money, int Saldo){
+        System.out.println( "\n" + "Bet placed for: " + money + "     You have: " + Saldo + " left to play for." + "\n");
     }
 
     public void dealerDraw(Card card){
@@ -31,12 +35,21 @@ public class View {
         System.out.println("You choosed: " + s);
     }
     public void playerWin(){
-        System.out.println("You won!");
+        System.out.println("You won!" + "\n");
+    }
+    public void playerWin(int totalMoney, int priceMoney){
+        System.out.println("You won " + priceMoney + " Bananas! You have " + totalMoney +" on your accout" + "\n");
     }
     public void playerLose(){
-        System.out.println("You lost!");
+        System.out.println("You lost!" + "\n");
     }
     public void playerBust(){
         System.out.println("You bust!");
+    }
+    public void playerEnterToLargeBet(){
+        System.out.println("\n" + "Bet to big, try bet the amont you own....");
+    }
+    public void showSaldo(int saldo){
+        System.out.println("You have "+ saldo + " in your pocket.");
     }
 }
