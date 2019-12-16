@@ -10,10 +10,7 @@ public class Controller {
     int Saldo = 100;
     Scanner scanner = new Scanner(System.in);
 
-
-
-
-
+  //  public Controller(){}
     public Controller(Model model, Deck deck) {
         this.model = model;
         this.deck = deck;
@@ -127,6 +124,8 @@ public class Controller {
         model.dealerCards.add(deck.drawCard());
         model.playerCards.add(deck.drawCard());
         model.playerCards.add(deck.drawCard());
+
+
     }
     public void calculatePlayerScore(){
         playerHandValue = calculateTotal(model.getPlayerCards(), model.getPlayerCards().get(model.getPlayerCards().size() - 1));

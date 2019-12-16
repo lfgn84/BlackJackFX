@@ -22,6 +22,8 @@ public class Rank {
 
     public final static List<Rank> ranks = Arrays.asList(ESS, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING);
 
+
+
     public Rank (String nameValue, String cardValue){
         name = nameValue;
         value = cardValue;
