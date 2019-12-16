@@ -41,7 +41,7 @@
         </GridPane>
       <ImageView fitHeight="95.0" fitWidth="96.0" layoutX="545.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../src/resources/logo.png" />
+            <Image url="@logo.png" />
          </image>
       </ImageView>
       <Button fx:id="Reset" layoutX="423.0" layoutY="317.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: red;" text="Reset Game" textFill="WHITE">

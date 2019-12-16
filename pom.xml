@@ -51,6 +51,12 @@
                     <include>board.jpg</include>
                 </includes>
             </resource>
+            <resource>
+                <directory>Resources</directory>
+                <includes>
+                    <include>logo.png</include>
+                </includes>
+            </resource>
         </resources>
         <plugins>
             <plugin>
